@@ -5,4 +5,8 @@ scikit-learn
 seaborn
 datetime
 typing
+mysql-connector
+sqlalchemy
+psycopg2
+pymysql
 -e .
