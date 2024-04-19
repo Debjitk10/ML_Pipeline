@@ -6,24 +6,26 @@ This project aims to develop an end-to-end machine learning solution for predict
 
 The project is structured as follows:
 
-├── README.md
-├── requirements.txt
-├── setup.py
-├── .gitignore
-└── src
-├── init.py
-├── exception.py
-├── logger.py
-├── utils.py
-├── components
-│ ├── init.py
-│ ├── data_ingestion.py
-│ ├── data_transformation.py
-│ └── model_trainer.py
-└── pipeline
-├── init.py
-├── train_pipeline.py
-└── prediction_pipeline.py
+ML_pipeline
+|-- README.md
+|-- requirements.txt
+|-- setup.py
+|-- .gitignore
+`-- src
+    |-- __init__.py
+    |-- exception.py
+    |-- logger.py
+    |-- utils.py
+    |-- components
+    |   |-- __init__.py
+    |   |-- data_ingestion.py
+    |   |-- data_transformation.py
+    |   `-- model_trainer.py
+    `-- pipeline
+        |-- __init__.py
+        |-- train_pipeline.py
+        `-- prediction_pipeline.py
+
 
 ## Getting Started
 
@@ -42,20 +44,26 @@ The project is structured as follows:
     ```bash
     pip install -r requirements.txt
     ```
-4. Run any of the scripts in the `pipeline` directory to initiate the training or prediction process.
+4. Create Source Directory
+Create a directory named src at the root of your project. This directory will contain all the source code for your project.
 
-## Usage
-- `train_pipeline.py`: This script initiates the training pipeline, which includes data ingestion, data transformation, model training, and model evaluation.
-- `prediction_pipeline.py`: This script initiates the prediction pipeline, where users can input new data to get predictions on house prices.
+bash
+Copy code
+mkdir src
+5. Create Subdirectories
+Within the src directory, create the following subdirectories:
+
+5.1. components
+This directory will include the following components: data_ingestion, data_transformation, model_trainer, and init.py. These components are interconnected for future use.
+
+5.2. pipeline
+Create a folder named pipeline within the src directory. This folder will contain two Python files: training_pipeline.py and prediction_pipeline.py, along with an init.py file.
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you encounter any problems or have suggestions for improvement.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 Special thanks to the contributors and developers of the libraries and tools used in this project.
 
 ## Authors
-- [Your Name](https://github.com/yourusername)
+- [Debjit Kundu](https://github.com/Debjitk10)
