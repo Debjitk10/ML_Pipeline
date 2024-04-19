@@ -49,9 +49,6 @@ The project is structured as follows:
 4. Create Source Directory
 Create a directory named src at the root of your project. This directory will contain all the source code for your project.
 
-bash
-Copy code
-mkdir src
 5. Create Subdirectories
 Within the src directory, create the following subdirectories:
 
