@@ -5,7 +5,7 @@ from src.logger import logging
 from src.exception import CustomException
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from src.utils import save_function, load_obj  # Corrected import statement
+from src.utils import save_function, load_obj  
 from dataclasses import dataclass
 
 @dataclass
